@@ -1,4 +1,4 @@
-[![PDF](https://img.shields.io/badge/PDF-download-blue)](http://rakhusur.github.io/BUM-Standard/BUM.Standard.pdf)
+[![PDF](https://img.shields.io/badge/PDF-download-blue)](http://rakhusur.github.io/BUM-Standard/BUM-Standard.pdf)
 
 # BUM-Standard
 
