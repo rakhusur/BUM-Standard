@@ -6,7 +6,7 @@
 
 Verwendet Tectonic für automatische Latex-Builds.
 
-👉 Installation: [https://tectonic-typesetting.github.io/]
+👉 Installation: <https://tectonic-typesetting.github.io/>
 
 ## Kompilieren
 
