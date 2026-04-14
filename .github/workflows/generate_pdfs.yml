@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  test:
+  run-tectonic:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,3 +30,22 @@ jobs:
         with:
           name: pdf
           path: build/default/default.pdf
+
+      - name: Make folder for pages
+        if: github.ref == 'refs/heads/main'
+        run: |
+          mkdir public
+          cp build/default/default.pdf public/index.pdf
+
+      - name: Deploy to github pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
+
+      - name: Release PDF
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/default/default.pdf
