@@ -38,7 +38,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           mkdir public
-          cp build/default/default.pdf public/index.pdf
+          cp build/default/default.pdf "public/BUM Standard.pdf"
 
       - name: Deploy to github pages
         if: github.ref == 'refs/heads/main'
@@ -46,6 +46,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
+
+      - name: Prepare PDF for release
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          cp build/default/default.pdf "BUM Standard ${GITHUB_REF_NAME}.pdf"
 
       - name: Release PDF
         if: startsWith(github.ref, 'refs/tags/v')
