@@ -1,5 +1,7 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage{fontspec}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{arev}
 
 \setmainfont{texgyrepagella}[
   Extension = .otf,
@@ -8,6 +10,16 @@
   ItalicFont = *-italic,
   BoldItalicFont = *-bolditalic,
 ]
+
+% Don’t forget to put a {} in text paragraphs like "Some \mymacro{} stuff" lest the macro
+% eats the blank.
+\definecolor{myGreen}{rgb}{0,0.6,0}
+\newcommand*{\M}{OF}
+\newcommand*{\m}{UF}
+\renewcommand*{\c}{{\color{myGreen}\(\clubsuit\)}}
+\renewcommand*{\d}{{\color{orange}\(\vardiamond\)}}
+\newcommand*{\h}{{\color{red}\(\varheart\)}}
+\newcommand*{\s}{{\color{blue}\(\spadesuit\)}}
 
 \title{BUM Standard}
 
