@@ -1,7 +1,12 @@
 \documentclass[a4paper]{article}
 \usepackage{fontspec}
+\usepackage[german]{babel}
+\usepackage{microtype}
+\usepackage[parfill]{parskip}
+\usepackage{arev} % some suit symbols
 \usepackage[dvipsnames,svgnames,table]{xcolor}
-\usepackage{arev}
+\usepackage{xparse}
+\usepackage{tabularx}
 
 \setmainfont{texgyrepagella}[
   Extension = .otf,
@@ -11,15 +16,34 @@
   BoldItalicFont = *-bolditalic,
 ]
 
-% Don’t forget to put a {} in text paragraphs like "Some \mymacro{} stuff" lest the macro
-% eats the blank.
+% Don’t forget to put a {} in text paragraphs like "Some \mymacro{} stuff" lest the
+% macro eats the blank.
 \definecolor{myGreen}{rgb}{0,0.6,0}
 \newcommand*{\M}{OF}
 \newcommand*{\m}{UF}
-\renewcommand*{\c}{{\color{myGreen}\(\clubsuit\)}}
-\renewcommand*{\d}{{\color{orange}\(\vardiamond\)}}
-\newcommand*{\h}{{\color{red}\(\varheart\)}}
-\newcommand*{\s}{{\color{blue}\(\spadesuit\)}}
+\renewcommand*{\c}{\(\textcolor{myGreen} \clubsuit\)}
+\renewcommand*{\d}{\(\textcolor{orange} \vardiamond\)}
+\newcommand*{\h}{\(\textcolor{red} \varheart\)}
+\newcommand*{\s}{\(\textcolor{blue} \spadesuit\)}
+
+% A table with two columns for bids and explanation.
+% A different colspec can be used by passing an optional argument, e.g.
+% \begin{bids}[llX] for three columns.
+% For subtrees, prefer `\subbids` for better spacing.
+\NewDocumentEnvironment{bids}{ O{l >{\raggedright\arraybackslash}X} }{%
+  \bgroup
+  \def\arraystretch{1.5}
+  \tabularx{\linewidth}{#1}
+}{%
+  \endtabularx
+  \egroup
+}
+
+\newcommand{\subbids}[1]{%
+  \begin{tabularx}{\hsize}{@{} l >{\raggedright\arraybackslash}X}
+    #1
+  \end{tabularx}
+}
 
 \title{BUM Standard}
 
