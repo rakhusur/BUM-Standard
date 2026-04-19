@@ -36,4 +36,6 @@ Beispiel:<br>
 
 Für Biettabellen innerhalb von Biettabellen, beispielsweise für Rebids, gibt es **\begin{subbids}**. Das sollte immer innerhalb der rechten Erklärungsspalte stehen, nicht in der linken Gebotsspalte.
 
-Für offene Todos: \tbd{...}. Im Dokument steht dann TBD: ... und der Text ist rot.
+Für offene Todos: **\tbd{...}**. Im Dokument steht dann TBD: ... und der Text ist rot.
+
+Jetzt wo ich das hier fertig geschrieben habe, sehe ich, dass Moritz es in der Datei _preamble.tex auch schon kommentiert hat. Naja, doppelt hält besser.
