@@ -35,3 +35,5 @@ Beispiel:<br>
 \end{bids}
 
 Für Biettabellen innerhalb von Biettabellen, beispielsweise für Rebids, gibt es **\begin{subbids}**. Das sollte immer innerhalb der rechten Erklärungsspalte stehen, nicht in der linken Gebotsspalte.
+
+Für offene Todos: \tbd{...}. Im Dokument steht dann TBD: ... und der Text ist rot.
