@@ -5,8 +5,8 @@
 \usepackage[parfill]{parskip}
 \usepackage{arev} % some suit symbols
 \usepackage[dvipsnames,svgnames,table]{xcolor}
-\usepackage{xparse}
 \usepackage{tabularx}
+\usepackage{todonotes}
 
 \setmainfont{texgyrepagella}[
   Extension = .otf,
@@ -44,6 +44,13 @@
     #1
   \end{tabularx}
 }
+
+\NewDocumentCommand{\tbd}{m}{\textcolor{red}{\textbf{TBD: }#1}}
+\NewDocumentEnvironment{tbdblock}{}
+  {
+    \color{red}\textbf{TBD: }\ignorespaces
+  }
+  {}
 
 \title{BUM Standard}
 
