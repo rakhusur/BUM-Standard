@@ -1,0 +1,3 @@
+tectonic -X build
+
+pause
