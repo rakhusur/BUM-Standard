@@ -52,15 +52,15 @@ Um die beiden Punktspannen 23--24 und 25+ für Balanced-Hände auseinander zu ha
 ist 2\h{} vom Eröffner doppeldeutig.
 
 \begin{bids}[lllX]
-    2\c & 2\d   & 2\h   & Kokish: natürlich oder balanced, gf \\
-        &       &       & \subbids{
-                            2\s & Relais \\
-                                & \subbids{
-                                    2NT & 25+ balanced \\
-                                    Rest & \h{}s, natürlich \\
-                                } \\
-                        } \\
-        &       & 2NT   & 23--24 \\
+    2\c\rs  & 2\d\ra    & 2\h\ra    & Kokish: natürlich oder balanced, gf \\
+            &           &           & \subbids{
+                                        2\s\ra  & Relais \\
+                                                & \subbids{
+                                                    2NT & 25\rplus{} balanced \\
+                                                    Rest & \h{}s, natürlich \\
+                                                } \\
+                                        } \\
+            &           & 2NT       & 23--24 \\
 \end{bids}
 
 Das funktioniert sehr einfach mit ausgeglichenen Händen.
@@ -85,13 +85,13 @@ Die natürlichen Wiedergebote zeigen 5er-Farben auf 2er und im Prinzip
 6er-Farben auf 3er-Stufe.
 
 \begin{bids}[lllX]
-    2\c & 2\d   & 2\s   & 5+\s \\
-        &       &       & \subbids{ 
-                            2NT & Abwartend \\
-                            4\c\d\h & Splinter \\
-                        } \\
-        &       & 3m & 6+m (zur Not 5, insbesondere mit 5-5 in UF) \\
-        &       &       & \subbids{ Neue Farbe & Stopper oder lange Farbe } \\
+    2\c\rs  & 2\d\ra    & 2\s   & 5\rplus\s \\
+            &           &       & \subbids{ 
+                                    2NT\ra  & Abwartend \\
+                                    4\c\d\h & Splinter \\
+                                } \\
+            &           & 3m    & 6+m (zur Not 5, insbesondere mit 5-5 in UF) \\
+            &           &       & \subbids{ Neue Farbe & Stopper oder lange Farbe } \\
 \end{bids}
 
 \subsubsection*{Sprung-Wiedergebote}
@@ -99,8 +99,8 @@ Die natürlichen Wiedergebote zeigen 5er-Farben auf 2er und im Prinzip
 So einfach wie möglich, da sie sowieso selten sind.
 
 \begin{bids}[lllX]
-    2\c & 2\d   & 3\h3\s4\c4\d & Legt Trumpffarbe fest, Aufforderung zu Cue-Bids \\
-        &       & 3NT   & Zum Spielen mit stehender 7er-Farbe \\
+    2\c\rs  & 2\d\ra    & 3\h3\s4\c4\d  & Legt Trumpffarbe fest, Aufforderung zu Cue-Bids \\
+            &           & 3NT\rka       & Zum Spielen mit stehender 7er-Farbe \\
 \end{bids}
 
 \subsection{Andere Antworten als 2\d}
@@ -119,27 +119,27 @@ Mit sehr guten Einfärbern kann es auch gegenüber einer Kürze die beste Trumpf
 aber man könnte die Farbe nach 2\d{} höchstens einmal reizen.
 
 \begin{bids}[llX]
-    2\c & 2\h   & 5\h-5m oder Einfärber \\
-        &       & \subbids{
-                    2\s & Relais \\
-                        & \subbids{
-                            3m  & 5-5 \\
-                            3\h & Einfärber \tbd{-> Cuebids?} \\
+    2\c\rs  & 2\h\ra    & 5\rplus\h-5\rplus m oder Einfärber \\
+            &           & \subbids{
+                            2\s\ra  & Relais \\
+                                    & \subbids{
+                                        3m  & 5\rplus-5\rplus \\
+                                        3\h & Einfärber \tbd{-> Cuebids?} \\
+                                    } \\
                         } \\
-                } \\
-        & 2\s   & 5\s-5x oder Einfärber \\
-        &       & \subbids{
-                    2NT & Relais
-                } \\
-        & 2NT   & 5-5 UF \\
-        & 3\c\d & Einfärber \\
+            & 2\s\ra    & 5\rplus\s-5\rplus x oder Einfärber \\
+            &           & \subbids{
+                            2NT\ra & Relais
+                        } \\
+            & 2NT\ra    & 5\rplus-5\rplus UF \\
+            & 3\c\d     & Einfärber \\
 \end{bids}
 
 \begin{tbdblock}
     Alternative: Die Anforderungen an 2\h{} sind geringer, weil es kaum Bietraum
     nimmt, und der Eröffner reizt natürlich weiter.
     Man kann z.B.\ 2\h{} immer dann reizen, wenn man glaubt, dass man nach
-    2\h{} 2NT = 23+ besser dasteht, als nach 2\d{} 2NT = 23--24: also wenn die
+    2\h{} 2NT = 23\rplus{} besser dasteht, als nach 2\d{} 2NT = 23--24: also wenn die
     Möglichkeit, die eigene Verteilung zu beschreiben, wichtiger ist, als die
     Punkte des EÖ genauer zu kennen.
 \end{tbdblock}
@@ -159,27 +159,27 @@ Die Reizung ist deshalb einfach partieforcing.
 \subsubsection*{Reaktion vom Antwortenden auf Gegenreizung}
 
 \begin{bids}[lllX]
-    2\c & (2\s) & Neue Farbe & positiv, ordentliche Farbe \\
-        &       & X         & positiv, take-out \\
-        &       & p         & kein klares Gebot \\
-        &       &           & \subbids{
-                                2NT & forcing \\
-                                X   & kein Gebot (hier im Prinzip balanced ohne ausreichenden Stopper, auf höherer Stufe schwammiger) \\
-                                3NT & zum Spielen \\
-                                3\s & Frage nach Stopper mit stehender Farbe \\
-                            } \\
+    2\c\rs  & (2\s) & Neue Farbe & positiv, ordentliche Farbe \\
+            &       & X         & positiv, take-out \\
+            &       & p         & kein klares Gebot \\
+            &       &           & \subbids{
+                                    2NT     & bal.\ (im Prinzip), 23\rplus, forcing \\
+                                    X       & kein Gebot (hier im Prinzip balanced ohne ausreichenden Stopper, auf höherer Stufe schwammiger) \\
+                                    3NT     & zum Spielen \\
+                                    3\s\ra  & Frage nach Stopper mit stehender Farbe \\
+                                } \\
 \end{bids}
 
 Ein Ausspielkontra wird wie ein 2\c-Gebot behandelt:
 
 \begin{bids}[lllX]
-    2\c & (X)   & 2\d   & natürlich \\
-        &       & XX    & positiv, take-out \\
-        &       & p     & nichts zu sagen \\
-        &       &       & \subbids{ 
-                            XX & Kein natürliches Gebot \\
-                            3\c & Frage nach Stopper \\
-                        } \\
+    2\c\rs  & (X)   & 2\d   & natürlich \\
+            &       & XX    & positiv, take-out \\
+            &       & p     & nichts zu sagen \\
+            &       &       & \subbids{ 
+                                XX & Kein natürliches Gebot \\
+                                3\c & Frage nach Stopper \\
+                            } \\
 \end{bids}
 
 \subsubsection*{Reaktion vom Eröffner nach Reizung vom rechten Gegner}
@@ -188,8 +188,8 @@ Im Prinzip ähnlich, wobei der Eröffner daran denken sollte, dass er erst mal p
 wenn er sich über Fitfarbe oder Kontrakthöhe nicht sicher ist.
 
 \begin{bids}[lllllX]
-    2\c & (--)  & 2\d   & (3\c) & X     & take-out, spielbereit in Restfarben \\
-        &       &       &       & p     & abwartend \\
+    2\c\rs  & (--)  & 2\d\ra    & (3\c) & X     & take-out, spielbereit in Restfarben \\
+            &       &           &       & p     & abwartend \\
 \end{bids}
 
 \section{2\d-Eröffnung}
