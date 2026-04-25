@@ -26,6 +26,8 @@ Hier ein Überblick über die wichtigsten Custom-Latex-Commands:
 
 **\s \h \d \c** für Piks, Coeur, Karo und Treff. Im Fließtext sorgt bspw. \s{} dafür, dass nach dem Pik-Symbol ein Leerzeichen gesetzt wird.
 
+**\ra, \rs, \rka, \rplus, \rminus** für hochgestellte (raised) a (Alert), s (Sofortauskunft), ? (keine Ahnung, ob man das alertieren sollte), + und –.
+
 **\begin{bids} \end{bids}** legt eine Tabelle mit zwei Spalten an, von der die rechte so breit ist wie nötig - Ideal für Erklärungen von Geboten ;)
 
 Beispiel:<br>
@@ -34,7 +36,7 @@ Beispiel:<br>
 1\d & 12 Punkte, bla bla \\\\<br>
 \end{bids}
 
-Für Biettabellen innerhalb von Biettabellen, beispielsweise für Rebids, gibt es **\begin{subbids}**. Das sollte immer innerhalb der rechten Erklärungsspalte stehen, nicht in der linken Gebotsspalte.
+Für Biettabellen innerhalb von Biettabellen, beispielsweise für Rebids, gibt es **\subbids**. Das sollte immer innerhalb der rechten Erklärungsspalte stehen, nicht in der linken Gebotsspalte.
 
 Für offene Todos: **\tbd{...}**. Im Dokument steht dann TBD: ... und der Text ist rot.
 
