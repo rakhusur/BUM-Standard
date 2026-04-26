@@ -40,72 +40,152 @@
 \section{2\c-Eröffnung}
 
 Die 2\c-Eröffnung ist die einzige starke Eröffnung außer 2NT und partieforcing,
-mit Ausnahme der 23--24 balanced Hände, die auch enthalten sind.
+mit Ausnahme der 23--24 balanced-Hände, die auch enthalten sind.
 Nach Gegenreizung ist man jedenfalls immer im Forcing-Pass.
-Die 2\d-Antwort ist fast automatisch.
+Der AW reizt meistens 2\d{}, was nichts aussagt, oder 2\h{} mit 5er.
 
-\subsection{Wiedergebote}
+\subsection{Wiedergebote auf 2\d}
 
-\subsubsection*{Kokish}
-
+Die Wiedergebote zeigen 5er-Farben auf der 2er-Stufe und 6er-Farben auf der 3er-Stufe.
+Ausnahme: mit 5-5 in UF hat man kein anderes Gebot. Mit 5431 und langer UF im Zweifelsfall SA.
 Um die beiden Punktspannen 23--24 und 25+ für Balanced-Hände auseinander zu halten,
-ist 2\h{} vom Eröffner doppeldeutig.
+ist 2\h{} vom Eröffner doppeldeutig (Kokish-Konvention).
 
 \begin{bids}[lllX]
-    2\c\rs  & 2\d\ra    & 2\h\ra    & Kokish: natürlich oder balanced, gf \\
-            &           &           & \subbids{
-                                        2\s\ra  & Relais \\
-                                                & \subbids{
-                                                    2NT & 25\rplus{} balanced \\
-                                                    Rest & \h{}s, natürlich \\
-                                                } \\
-                                        } \\
+    2\c\rs  & 2\d\ra    & Wiedergebote: \\
+            &           & 2\h\ra    & Kokish: natürlich oder balanced, gf \\
+            &           & 2\s       & 5\rplus\s \\
             &           & 2NT       & 23--24 \\
+            &           & 3m        & 6+m (zur Not 5, insbesondere mit 5-5 in UF) \\
+            &           & 3NT\rka   & Zum Spielen mit stehender 7er-Farbe \\
 \end{bids}
 
-Das funktioniert sehr einfach mit ausgeglichenen Händen.
-Der einzige Nachteil ist, dass wenn der EÖ \h{}s hat, der AW nicht sofort darauf reagieren kann -- 
-z.B. hat er nach Kokish gefolgt von 3\h{} keine Möglichkeit mehr,
-auf 3er-Stufe zu fitten oder zu splintern.
+\subsubsection{Weiterreizung nach 2\h{}-Wiedergebot}
+
+Der AW kann entweder ein 2\s{}-Relais abgeben, um die Doppeldeutigkeit aufzulösen,
+oder eine eigene Farbe im Transfer reizen.
+Dabei eine Besonderheit: Es gibt keinen Transfer auf \h{}. 
+Mit \h{}s reizt man 2\s{}, wartet auf 2SA vom EÖ und reizt dann ganz normal Transfer.
+Wenn der EÖ nicht 2SA sagt, sondern selber \h{}s hat, umso besser!
+Daher ist 3\d{} Transfer auf \s{}. Das lässt dem EÖ den Platz, mit 3\h{} auf seinen \h{}s zu bestehen.
+
+\begin{bids}[lllX]
+    2\c\rs  & 2\d\ra    & 2\h\ra    & Antworten: \\
+            &           &           & \subbids{
+                                        2\s\ra  & Relais, oft mehr oder weniger balanced, oder lange \h{}s \\
+                                        2NT\ra  & Transfer \c{} \\
+                                        3\c\ra  & Transfer \d \\
+                                        3\d\ra! & Transfer \s \\
+                                    }
+\end{bids}
+
+\textbf{Nach 2\s{}-Relais}
+
+\begin{bids}[llllX]
+    2\c\rs  & 2\d\ra    & 2\h\ra    & 2\s\ra    & Wiedergebote: \\
+            &           &           &           & \subbids{
+                                                    2NT & 25\rplus{} balanced \\
+                                                    \multicolumn{2}{@{}l}{Alles andere zeigt \h{}s:} \\
+                                                    3\c\d\s & zweite Farbe \\
+                                                    3\h     & Einfärber, gute Farbe \\
+                                                    3NT     & Einfärber, für NT geeignet \\
+                                                } \\
+\end{bids}
+
+Eine Schwierigkeit ist, dass nach 3\h{} und 3NT kein Platz mehr ist, um unterschiedlich positive Fits zu zeigen:
+Man kann nur auf 4\h{} heben (negativ, max.\ 1 Stich) oder ein Kontrollgebot abgeben (leicht positiv+).
+Es gibt hier keine Verwechslungsgefahr mit einem natürlichen Gebot -- wenn der AW eine eigene Farbe zu reizen hat, muss er gleich transferieren.
 
 \begin{tbdblock}
-    Ein paar zusätzliche, optionale Gadgets:
-    \begin{itemize}
-    \item Man kann nach dem 2\s{}-Relais 3\c{} und 3\h{} vom EÖ vertauschen, sodass mit
+    Man kann nach dem 2\s{}-Relais 3\c{} und 3\h{} vom EÖ vertauschen, sodass mit
     Einfärbern mehr Platz bleibt, auf Kosten der \h{}-\c{}-Zweifärber.
-    \item Oben ist 2\s{} vom AW automatisch, aber man kann auch den anderen Geboten eine
-    Bedeutung geben. Z.B.: Andere Gebote sind Transfers, worauf der EÖ mit
-    der Balanced-Hand ausführt und mit \h{}s etwas anderes reizt. 
-    \end{itemize}
+    Oder 3\c{} doppeldeutig mit 3\d{}-Relais.
 \end{tbdblock}
 
-\subsubsection*{Standard-Wiedergebote}
+\textbf{Nach Transfers}
 
-Die natürlichen Wiedergebote zeigen 5er-Farben auf 2er und im Prinzip 
-6er-Farben auf 3er-Stufe.
-
-\begin{bids}[lllX]
-    2\c\rs  & 2\d\ra    & 2\s   & 5\rplus\s \\
-            &           &       & \subbids{ 
-                                    2NT\ra  & Abwartend \\
-                                    4\c\d\h & Splinter \\
-                                } \\
-            &           & 3m    & 6+m (zur Not 5, insbesondere mit 5-5 in UF) \\
-            &           &       & \subbids{ Neue Farbe & Stopper oder lange Farbe } \\
-\end{bids}
-
-\subsubsection*{Sprung-Wiedergebote}
-
-So einfach wie möglich, da sie sowieso selten sind.
+Der EÖ führt den Transfer mit der balanced-Hand aus und reizt natürlich mit einer \h{}-Hand.
+Mit Fit kann er im Sprung heben, um die Trumpffarbe festzulegen, egal ob balanced oder \h{}s.
+Eine „Wiederholung” von 3\h{} legt \h{} als Trumpf fest -- eine Farbe vom AW ist darauf ein Cuebid, selbst die Wiederholung seiner Transfer-Farbe.
 
 \begin{bids}[lllX]
-    2\c\rs  & 2\d\ra    & 3\h3\s4\c4\d  & Legt Trumpffarbe fest, Aufforderung zu Cue-Bids \\
-            &           & 3NT\rka       & Zum Spielen mit stehender 7er-Farbe \\
+    2\c\rs  & 2\d\ra    & 2\h\ra    & Transfer-Antworten und Weiterreizung: \\
+            &           &           & \subbids{
+                                        2NT\ra  & Transfer \c{} \\
+                                                & \subbids{
+                                                    3\c\ra  & 25\rplus bal. \\
+                                                    3\d\s   & zweite Farbe mit \h{}s \\
+                                                    3\h     & Gute \h{}, legt Trumpffarbe fest \\
+                                                    3NT     & nat. mit \h{}s (kein Fit, Stopper in Restfarben) \\
+                                                    4\c     & Fit \\
+                                                } \\
+                                        3\c\ra  & Transfer \d \\
+                                                & Weiterreizung analog (4\c = zweite Farbe) \\
+                                        3\d\ra! & Transfer \s \\
+                                                & Weiterreizung analog: \\
+                                                & \subbids{
+                                                    3\h     & Gute \h{}, legt Trumpffarbe fest \\
+                                                    3\s\ra  & 25\rplus bal. \\
+                                                    3NT     & nat. mit \h{}s \\
+                                                    4\c\d   & zweite Farbe \\
+                                                    4\s     & Fit, ermutigend, nonforcing \\
+                                                    4NT     & Assfrage, bestätigt \s{}
+                                                } \\
+                                    } \\
 \end{bids}
+
+In der letzten Zeile ist 4NT Assfrage auch ohne vorherige Fitbestätigung:
+Es gibt hier wenig Grund für ein quantitatives Gebot; mit ausgeglichenen Händen kann man
+ja erst den Transfer ausführen.
+4\s{} als forcing zu spielen klingt jedenfalls gefährlicher, auch wenn es nicht forcierend selten
+gereizt und noch seltener gepasst wird.
+
+\subsubsection{Weiterreizung nach natürlichen Wiedergeboten}
+
+\textbf{Nach 2\s{}}
+
+Anders als nach 2\h{} ist kein Platz mehr für Transfers, 2SA wird als abwartendes Relais benötigt.
+Dafür kann der EÖ auch nicht mehr die balanced-Hand haben, wodurch die Weiterreizung ziemlich analog wird.
+Dazu kommt nur die Möglichkeit für den AW, die \s{}s direkt zu heben, auf 3er-Stufe, 4er-Stufe, oder mit Splinter.
+
+\begin{bids}[lllX]
+    2\c\rs  & 2\d\ra    & 2\s       & Weiterreizung: \\
+            &           &           & \subbids{ 
+                                        2NT\ra  & Abwartend \\
+                                        3\s     & positiv (ab 1,5 Stichen) \\
+                                                & \subbids {
+                                                    3NT & non-serious -- so gerade eine GF-Eröffnung
+                                                } \\
+                                        4\c\d\h & Splinter: 4 Trümpfe, Single, ca.\ 1 nützliche Figur (idR 1 A/K, evtl.\ noch 1D dazu) \\
+                                        4\s     & negativ (max.\ 1 Stich) \\
+                                        3\c\d\h & 5\rplus{}er, positive Hand \\
+                                                & \subbids {
+                                                    3\s & legt \s{} als Trumpf fest \\
+                                                    4\h{} auf 3\h & Fit, ermutigend, nonforcing \\
+                                                    4NT auf 3\h & Assfrage, bestätigt \h{} \\
+                                                }
+                                    } \\
+\end{bids}
+
+\textbf{Nach 3UF}
+
+Eine neue Farbe vom AW kann eine lange Farbe sein, oder auch nur ein Stopper um 3SA zu spielen -- letzeres v.A.\ mit schwachen Händen, die nicht am UF-Schlemm interessiert sind.
+Wenn der EÖ kein besseres Gebot hat, kann er mit 3er-Anschluss heben; der AW korrigiert auf 5 in Eröffnerfarbe, wenn es keine lange Farbe war.
 
 \subsection{Andere Antworten als 2\d}
 
-Zwei Handtypen erlauben, etwas anderes als 2\d{} zu antworten:
+\subsubsection*{2\h{}-Antwort}
+
+2\h{} nimmt dem EÖ mit unausgeglichenen Verteilungen keinen Bietraum, daher sind die Anforderungen viel geringer, als bei den anderen Antworten:
+Eine brauchbare 5er-Farbe in einer positiven Hand reicht.
+Trotzdem ist der AW nicht gezwungen, ein 5er-\h{} zu zeigen, wenn er der Meinung ist, nach einer 2\d{}-Antwort besser dazustehen.
+Die Weiterreizung ist natürlich und folgt den gleichen Prinzipien wie nach 2\d-Antwort.
+2SA vom EÖ zeigt 23\rplus{} -- die Punktspanne wird also nicht mehr genauer aufgelöst, dafür hat der AW jetzt die 3er-Stufe zur Verfügung, um eine zweite Farbe zu zeigen.
+
+\subsubsection*{Höhere Antworten}
+
+Die Antworten ab 2\s{} haben ein erhöhtes Risiko, dass der EÖ seine Farbe eine Stufe höher zeigen muss.
+Sie werden deshalb viel seltener und nur mit bestimmten Handtypen abgegeben:
 \begin{enumerate}
 \item Gute 5-5-Hände.
 \item Einfärber mit sehr guten Farben, die schon gegenüber einer Single-Topfigur
@@ -119,30 +199,17 @@ Mit sehr guten Einfärbern kann es auch gegenüber einer Kürze die beste Trumpf
 aber man könnte die Farbe nach 2\d{} höchstens einmal reizen.
 
 \begin{bids}[llX]
-    2\c\rs  & 2\h\ra    & 5\rplus\h-5\rplus m oder Einfärber \\
+    2\c\rs  & 2\s\ra    & 5\rplus\s-5\rplus x oder Einfärber \\
             &           & \subbids{
-                            2\s\ra  & Relais \\
+                            2NT\ra  & Relais \\
                                     & \subbids{
-                                        3m  & 5\rplus-5\rplus \\
-                                        3\h & Einfärber \tbd{-> Cuebids?} \\
+                                        3x  & 5\rplus-5\rplus \\
+                                        3\s & Einfärber \textrightarrow{} Cuebids \\
                                     } \\
-                        } \\
-            & 2\s\ra    & 5\rplus\s-5\rplus x oder Einfärber \\
-            &           & \subbids{
-                            2NT\ra & Relais
                         } \\
             & 2NT\ra    & 5\rplus-5\rplus UF \\
             & 3\c\d     & Einfärber \\
 \end{bids}
-
-\begin{tbdblock}
-    Alternative: Die Anforderungen an 2\h{} sind geringer, weil es kaum Bietraum
-    nimmt, und der Eröffner reizt natürlich weiter.
-    Man kann z.B.\ 2\h{} immer dann reizen, wenn man glaubt, dass man nach
-    2\h{} 2NT = 23\rplus{} besser dasteht, als nach 2\d{} 2NT = 23--24: also wenn die
-    Möglichkeit, die eigene Verteilung zu beschreiben, wichtiger ist, als die
-    Punkte des EÖ genauer zu kennen.
-\end{tbdblock}
 
 \subsection{Nach Gegenreizung}
 
